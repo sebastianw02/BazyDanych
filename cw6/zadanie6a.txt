@@ -1,0 +1,46 @@
+1. 
+id_produktu -> nazwa_produktu, cena_produktu, VAT
+
+nazwa_produktu -> id_produktu, cena_produktu, VAT
+
+id_klienta -> nazwa_klienta
+
+nazwa_klienta -> id_klienta
+
+data_zamowienia -> id_klienta, nazwa_klienta, ilość
+
+cena_produktu -> id_produktu, nazwa produktu
+
+ilość -> brak
+
+VAT -> nazwa_produktu
+
+suma_brutto -> suma_netto, VAT
+
+suma_netto -> suma_brutto, VAT
+
+2.
+Klucze kandydujące -> id_produktu, id_klienta
+
+3.
+id_pomieszczenia -> nr_pomieszczenia, id_budynku, powierzchnia, liczba_okien,
+liczba_drzwi, ulica, miasto, kod_pocztowy
+
+numer_pomieszczenia -> powierzchnia, liczba_okien, liczba_drzwi
+
+id_budynku -> ulica, miasto, kod_pocztowy
+
+powierzchnia -> brak
+
+liczba_okien -> brak
+
+liczba_drzwi -> brak
+
+ulica -> brak
+
+miasto -> kod_pocztowy
+
+kod_pocztowy -> miasto
+
+4.
+Klucze kandydujące -> id_pomieszczenia, nr_pomieszczenia
