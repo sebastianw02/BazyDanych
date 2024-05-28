@@ -95,7 +95,7 @@ DELETE FROM Production.Product
 WHERE StandardCost > (SELECT AVG(StandardCost) FROM Production.Product);
 IF @@ROWCOUNT > 10
 	BEGIN
-		PRINT 'Wiêcej ni¿ 10 produktów do usuniecia';
+		PRINT 'WiÃªcej niÂ¿ 10 produktÃ³w do usuniecia';
 		ROLLBACK;
 	END;
 	ELSE
